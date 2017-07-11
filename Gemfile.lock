@@ -1,8 +1,8 @@
 GIT
-  remote: https://github.com/teddybear123/devcamp_view_tool
-  revision: 3d5944381408ea9b796737806ad5e42cc9806103
+  remote: https://github.com/teddybear123/copyright_kiran
+  revision: 59e53ee85605dd84cd37a5a4bab049b0c2bb6587
   specs:
-    devcamp_view_tool (0.1.0)
+    copyright_kiran (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -190,7 +190,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
-  devcamp_view_tool!
+  copyright_kiran!
   devise (~> 4.3)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)

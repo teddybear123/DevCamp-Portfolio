@@ -18,6 +18,6 @@ module ApplicationHelper
     end
     
     def copyright_generator
-        DevcampViewTool::Renderer.copyright 'Kiran Deifel', 'All rights reserved'
+        CopyrightKiran::Renderer.copyright 'Kiran Deifel', 'All rights reserved'
     end
 end
