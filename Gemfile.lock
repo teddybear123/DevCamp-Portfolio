@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/teddybear123/copyright_kiran
-  revision: 59e53ee85605dd84cd37a5a4bab049b0c2bb6587
-  specs:
-    copyright_kiran (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -63,6 +57,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    copyright_kiran (0.1.0)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -190,7 +185,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
-  copyright_kiran!
+  copyright_kiran (~> 0.1.0)
   devise (~> 4.3)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)

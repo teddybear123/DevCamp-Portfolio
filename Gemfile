@@ -55,4 +55,4 @@ gem 'devise', '~> 4.3'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
-gem 'copyright_kiran', git: 'https://github.com/teddybear123/copyright_kiran'
+gem 'copyright_kiran', '~> 0.1.0'
