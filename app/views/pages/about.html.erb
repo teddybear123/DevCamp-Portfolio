@@ -1,28 +1,101 @@
-<h1>About Me</h1>
-<p>This page is all about me and my life.</p>
-
-<hr color = "white">
-
-<div class = "row">
-    <div class = "col-md-4">
-        <%= image_tag "profile.jpg.JPG", width: "300", alt: "Profile Image" %>
-    </div>
-    
-    <div class = "col-md-8">
-        <h5>About My Life</h5>
-        <p>I am 17 years old. I live in Utah but I am originally from Tacoma, Washington. I have 6 animals that I 
-            live with on a daily and I have two dogs with my boyfriend.
-        </p>
+<div class = "app-card-container">
+    <div class = "card">
+        <h1>About Me</h1>
+        <p>This page is all about me and my life.</p>
         
-        <h5>Why did I decide to become a developer?</h5>
-        <p>I first decided I wanted to become a developer and a programmer when I was in 8th grade. My grade went 
-            on a tour of the college campus we would be transported to if we took classes there and coding was one
-            of the classes and they showed this awesome video that I still watch every now and again to this day.
-        </p>
-        
-        <h4>ANYONE CAN DO IT, IF YOU JUST BELIEVE</h4>
-        <p>I am not going to lie, programming is not an easy task. But if you stick to it and you push yourself to 
-            do the best you can, you can achieve great and amazing things in this world.</p>
+        <div class = "row">
+            <div class = "col-md-4">
+                <%= image_tag "me.jpg", width: "300", alt: "Profile Image", class: 'profile-image' %>
+                
+                
+            </div>
+            
+            <div class = "col-md-8">
+                <h5>
+                    About My Life
+                </h5>
+                <p>
+                    I am 17 years old. I live in Utah but I am originally from Tacoma, Washington. I am now a senior in high school
+                    and I attend Highland High School in South Salt Lake.
+                </p>
+                
+                <h5>
+                    Why did I decide to become a developer?
+                </h5>
+                <p>
+                    I first decided I wanted to become a developer and a programmer when I was in 8th grade. My grade went 
+                    on a tour of the college campus we would be transported to if we took classes there and coding was one
+                    of the classes and they showed this awesome video that I still watch every now and again to this day.
+                </p>
+                    
+                <p>
+                    <button 
+                        class = "btn btn-primary"
+                        type = "button"
+                        data-toggle = "collapse"
+                        data-target = "#jobHistory"
+                        aria-expanded = "false"
+                        aria-controler = "jobHistory"
+                    >
+                        Job History
+                    </button>
+                    <button 
+                        class = "btn btn-primary"
+                        type = "button"
+                        data-toggle = "collapse"
+                        data-target = "#education"
+                        aria-expanded = "false"
+                        aria-controler = "education"
+                    >
+                        Education
+                    </button>
+                </p>
+                
+                <p>
+                    <div class = "collapse" id = "jobHistory">
+                        <div class = "card card-block">
+                            Job 1
+                        </div>
+                        <div class = "card card-block">
+                            Job 2
+                        </div>
+                        <div class = "card card-block">
+                            Job 3
+                        </div>
+                    </div>
+                    
+                    <div class = "collapse" id = "education">
+                        <div class = "card card-block">
+                            High School Grad
+                        </div>
+                        <div class = "card card-block">
+                            ?
+                        </div>
+                        <div class = "card card-block">
+                            ?
+                        </div>
+                    </div>
+                </p>
+                <p>
+                    <div class = "skills">
+                        <% @skills.each do |skill| %>
+                        <div class = "skill">
+                            <h4><%= skill.title %></h4>
+                            <div class = "progress">
+                                <div 
+                                    class = "progress-bar progress-bar-striped bg-warning"
+                                    role = "progressbar"
+                                    aria-valuenow = "<%= skill.percent_utilized %>"
+                                    aria-valuemax = "100"
+                                    style = "width: <%= skill.percent_utilized %>%"
+                                ></div>
+                            </div>
+                        </div>
+                        <% end %>
+                    </div>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 
