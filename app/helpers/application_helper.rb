@@ -46,6 +46,11 @@ module ApplicationHelper
         url: tech_news_path,
         title: 'Tech News'
       },
+      {
+        url: edit_user_registration_path,
+        title: "Edit Account Info"
+      },
+      
     ]
   end
 
@@ -74,5 +79,6 @@ module ApplicationHelper
   def alert_generator msg
     js add_gritter(msg, title: "Kiran Deifel Portfolio", sticky: false)
   end
-
+  
+  
 end

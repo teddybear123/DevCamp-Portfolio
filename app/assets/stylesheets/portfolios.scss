@@ -61,6 +61,10 @@ h6, .h6 {
 .card-text {
   font-size: 85%;
 }
+  
+.card-text a {
+  color: #822741;
+ }
 
 footer {
   padding-top: 3rem;
@@ -75,4 +79,19 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+}
+
+.btn.btn-primary {
+  background-color: #822741;
+  border-color: grey;
+}
+
+.btn.btn-secondary {
+  background-color: #822741;
+  border-color: grey;
+  color: white;
+}
+
+.float-right a {
+  color: #822741;
 }
